@@ -4,7 +4,6 @@ import FunctionalComponent from "./FunctionalComponents";
 
 function App() {
   const [isVisible, setVisible] = useState(true);
-  console.log(isVisible);
 
   return (
     <div className="App">
