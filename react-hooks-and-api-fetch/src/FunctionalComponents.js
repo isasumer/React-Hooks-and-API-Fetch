@@ -5,6 +5,7 @@ const FunctionalComponent = () => {
 
     useEffect (() => {
         console.log("useEffect", counter);
+        return () => {console.log("func.comp.Willunmotund");}
     }, [counter])
     const increase = () => {
         setCounter(counter + 1)
