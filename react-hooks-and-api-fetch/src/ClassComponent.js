@@ -11,6 +11,12 @@ class ClassComponents extends React.Component {
     state = {
         counter:0
     };
+    componentDidMount(){
+        console.log('ComponentDidMount :>> ');
+    }
+    componentDidUpdate(){
+        console.log('ComponentDidUpdate :>> ',  this.state.counter);
+    }
 
 increase =() => {
    this.setState({counter: this.state.counter+1})
